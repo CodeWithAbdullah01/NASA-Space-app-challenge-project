@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+#landing-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    background: url('stars.jpg') no-repeat center center fixed;
+    background-size: cover;
+    z-index: 100; 
+    transition: opacity 1s ease;
+}
+
+#landing-page h1 {
+    font-size: 3rem;
+    margin: 0;
+    padding: 5px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+#start-button {
+    padding: 15px 30px;
+    font-size: 24px;
+    color: white;
+    background-color: rgba(0, 128, 255, 0.9);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+    margin-bottom: 70px;
+    cursor: pointer;
+}
+
+#landing-page p {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+    margin: 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.hidden{
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Responsive Styles */
+
+/* Mobile Devices */
+@media (max-width: 767px) {
+    #landing-page h1 {
+        font-size: 2rem;
+    }
+
+    #start-button {
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+
+    #landing-page p {
+        font-size: 1rem;
+    }
+}
+
+/* Tablets and Small Laptops */
+@media (min-width: 768px) and (max-width: 1024px) {
+    #landing-page h1 {
+        font-size: 2.5rem;
+    }
+
+    #start-button {
+        padding: 12px 24px;
+        font-size: 20px;
+    }
+
+    #landing-page p {
+        font-size: 1.25rem;
+    }
+}
+
+/* Large Screens */
+@media (min-width: 1025px) {
+    #landing-page h1 {
+        font-size: 3.5rem;
+    }
+
+    #start-button {
+        padding: 10px 20px;
+        font-size: 24px;
+    }
+
+    #landing-page p {
+        font-size: 1.5rem;
+    }
+}
