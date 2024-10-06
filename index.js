@@ -23,7 +23,7 @@ scene.add(ambientLight);
 
 // Create Sun
 const sunGeometry = new THREE.SphereGeometry(1.5, 32, 32);
-const sunTexture = new THREE.TextureLoader().load('assets/sun.jpg');
+const sunTexture = new THREE.TextureLoader().load('sun.jpg');
 const sunMaterial = new THREE.MeshBasicMaterial({ map: sunTexture, transparent: true, opacity: 0.8 });
 const sun = new THREE.Mesh(sunGeometry, sunMaterial);
 scene.add(sun);
@@ -40,7 +40,7 @@ scene.add(additionalLight);
 
 // Create Earth with texture
 const earthGeometry = new THREE.SphereGeometry(0.2, 32, 32);
-const earthTexture = new THREE.TextureLoader().load('assets/eday.jpg');
+const earthTexture = new THREE.TextureLoader().load('eday.jpg');
 const earthMaterial = new THREE.MeshStandardMaterial({ map: earthTexture });
 const earth = new THREE.Mesh(earthGeometry, earthMaterial);
 scene.add(earth);
@@ -71,8 +71,8 @@ const textureLoader = new THREE.TextureLoader();
 
 // Load textures for asteroids
 const textures = [
-    textureLoader.load('assets/asteroid3.jpg'),
-    textureLoader.load('assets/asteroid4.jpg')
+    textureLoader.load('asteroid3.jpg'),
+    textureLoader.load('asteroid4.jpg')
 ];
 
 // Function to create more realistic asteroid geometry
